@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"/>
+
+        <EditText
+            android:id="@+id/edt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Message"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send on channel one"
+            android:layout_marginTop="16dp"
+            android:background="#4aa4f5"
+            android:onClick="sendOnChannel1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Big text on channel two"
+            android:layout_marginTop="16dp"
+            android:background="#4aa4f5"
+            android:onClick="sendOnChannel2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "Big picture on channel one"
+            android:layout_marginTop="16dp"
+            android:background="#4aa4f5"
+            android:onClick="sendOnChannel1Big"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media on channel two"
+            android:layout_marginTop="16dp"
+            android:background="#4aa4f5"
+            android:onClick="sendMediaNotification"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress on channel one"
+            android:layout_marginTop="16dp"
+            android:background="#4aa4f5"
+            android:onClick="showDownloadingNotification"/>
+    </LinearLayout>
+
+
+</ScrollView>
